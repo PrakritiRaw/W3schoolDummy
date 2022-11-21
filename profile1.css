@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:"Ubuntu",sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+} 
+
+
+div.abc{background: url(2bg.png) no-repeat center;
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+div.abcmy{background: url(myprofbg.jpg) no-repeat center;
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+.profile-card{
+    width: 400px;
+    text-align: center;
+    border-radius: 8px;
+    overflow: hidden;
+}
+div.card-header{
+    background: rgb(245, 239, 239);
+    
+    padding: 60px 40px;
+}
+.pic{
+    display:inline-block ;
+    padding: 5px;
+    background: linear-gradient(130deg,#97ddf3,#b643ac);
+    margin: auto;
+    background-size: 200% 200%;
+    border-radius: 50%;
+    animation: animated-gradient 2s linear infinite;
+}
+
+@keyframes animated-gradient {
+    25%{
+        background-position: left bottom;
+    }
+    50%{
+        background-position: right bottom;
+    }
+    75%{
+        background-position: right top;
+    }
+    100%{
+        background-position: left top;
+    }
+}
+
+.pic img{
+    display: block;
+    width: 100px;
+    height:100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.name{
+    color: rgb(7, 7, 7);
+    font-size: 30px;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.desc{
+    font-size: 18px;
+    color:#60a752;
+    font-weight: bold;
+}
+.sm{
+    display: flex;
+    justify-content: center;
+    margin:20px 0;
+}
+.sm a{
+    color: black;
+    width: 56px;
+    font-size:22px;
+    transition: .3s linear;
+}
+.sm a:hover{
+    color:#60a752;
+}
+div.card-footer{
+    background: rgb(245, 252, 251);
+    padding: 60px 10px;
+}
+.numbers{
+    display: flex;
+    align-items: center;
+}
+.items{
+    flex:1;
+    text-transform: uppercase;
+    font-size: 13px;
+    color:#1a700b;
+}
+.items span{
+    display: block;
+    color: #151b14;
+    font-size: 30px;
+}
+.border{
+    width: 1px;
+    height: 30px;
+    background: #bbb;
+}
+.nav-link:hover{
+    background-color: #129e68;
+    font-weight: bold;
+   }
